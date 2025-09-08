@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/base.css';
+import HeaderContainer from './HeaderContainer.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+const headerContainer = ReactDOM.createRoot(document.getElementById('header-container'));
+
+headerContainer.render(
+  <React.StrictMode>
+    <HeaderContainer />
+  </React.StrictMode>
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
