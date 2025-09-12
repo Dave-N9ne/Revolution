@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="utf-8" />
-    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -21,6 +21,9 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link rel="stylesheet" href="../src/css/base.css" />
+    <link rel="stylesheet" href="../src/css/media.css" />
+    <!-- ! переделать все картинки в webp и avif -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -28,7 +31,7 @@
       <div
         id="header-container"  
         class="container header__container header-container">
-        <!-- ! -->
+        <!-- ! сделать в реакте header -->
         <nav class="header__nav header-nav nav">
           <div class="header__logo"></div>
           <div class="header__control">
@@ -48,41 +51,63 @@
       </div>
     </header>
     <main class="main">
-      <section class="base">
-        <div class="container base__container">
-          <ul class="base__list base__grid grid">
-            <li class="base__item base__grid-element grid-element">
-              <article class="base__article">
-                <div class="svg"></div>
-                <h3 class="base__sub-title sub-title"></h3>
-                <p class="base__desc desc"></p>
+      <section class="coffee">
+        <div class="container coffee__container">
+          <ul class="coffee__list coffee__grid grid">
+            <li class="coffee__item coffee__grid-element grid-element">
+              <article class="coffee__article">
+                <div class="coffee__logo">
+                  <img
+                    src="./images/icons/coffee-icon-1.svg" 
+                    alt=""
+                  />          
+                </div>
+                <h3 class="coffee__sub-title sub-title"></h3>
+                <p class="coffee__desc desc"></p>
               </article>
             </li>
-            <li class="base__item base__grid-element grid-element">
-              <article class="base__article">
-                <div class="svg"></div>
-                <h3 class="base__sub-title sub-title"></h3>
-                <p class="base__desc desc"></p>
+            <li class="coffee__item coffee__grid-element grid-element">
+              <article class="coffee__article">
+                <div class="coffee__logo">
+                  <img
+                    src="./images/icons/coffee-icon-2.svg" 
+                    alt=""
+                  />
+                </div>
+                <h3 class="coffee__sub-title sub-title"></h3>
+                <p class="coffee__desc desc"></p>
               </article>
             </li>
-            <li class="base__item base__grid-element grid-element">
-              <article class="base__article">
-                <div class="svg"></div>
-                <h3 class="base__sub-title sub-title"></h3>
-                <p class="base__desc desc"></p>
+            <li class="coffee__item base__grid-element grid-element">
+              <article class="coffee__article">
+                <div class="coffee__logo">
+                  <img
+                    src="./images/icons/coffee-icon-3.svg" 
+                    alt=""
+                  />
+                </div>
+                <h3 class="coffee__sub-title sub-title"></h3>
+                <p class="coffee__desc desc"></p>
               </article>
             </li>
-            <li class="base__item base__grid-element grid-element">
-              <article class="base__article">
-                <div class="svg"></div>
-                <h3 class="base__sub-title sub-title"></h3>
-                <p class="base__desc desc"></p>
+            <li class="coffee__item coffee__grid-element grid-element">
+              <article class="coffee__article">
+                <div class="coffee__logo">
+                  <img
+                    src="./images/icons/coffee-icon-4.svg" 
+                    alt=""
+                  />
+                </div>
+                <h3 class="coffee__sub-title sub-title"></h3>
+                <p class="coffee__desc desc"></p>
               </article>
             </li>
           </ul>
         </div>
       </section>
-      <div id="root"></div>
+      <div id="root">
+        <!-- ! сделать 2 слайдера (1 двойной и 1 обычный) и табы на React -->
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer__container">
