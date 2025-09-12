@@ -1,7 +1,9 @@
+import './css/HeaderContainer.css'
+
 function HeaderContainer() {
     return (
         <div>
-            header
+            
         </div>
     )
 }

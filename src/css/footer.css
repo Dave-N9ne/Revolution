@@ -1,0 +1,9 @@
+.footer {
+    background: var(--light-gray-color);
+    text-align: center;
+    color: #415167;
+}
+.footer .container {
+    padding-top: 28px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,27 @@
+.coffee {
+    margin-bottom: 128px;
+    text-align: center;
+}
+.coffee__title {
+    margin-bottom: 72px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+    gap: 68px;
+}
+.coffee__article > * {
+    margin: 0 auto;
+}
+.coffee__logo {
+    margin-bottom: 21px;
+    max-width: 80px;
+    max-height: 88px;
+    object-fit: contain;
+}
+.coffee__sub-title {
+    margin-bottom: 12px;
+}
+.coffee__desc {
+    max-width: 226px;
+}
