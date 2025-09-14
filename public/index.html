@@ -10,7 +10,7 @@
       content="Web site created using create-react-app"
     />
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -21,62 +21,13 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <link rel="stylesheet" href="../src/css/base.css" />
-    <link rel="stylesheet" href="../src/css/media.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/media.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/base.css" />
     <!-- ! переделать все картинки в webp и avif -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <header class="header">
-      <div class="container header__container header-container">
-        <div class="header__wrapper">
-          <nav class="header__nav header-nav nav center-y">
-            <div class="header__logo">
-              <img src="./images/icons/revo-icon.svg" alt="">
-            </div>
-            <div class="header__control">
-              <div class="header__cart">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.31755 1.66388H14.7273C14.7677 1.66388 14.8045 1.67932 14.8424 1.69091L15.172 0.589594C15.2768 0.239363 15.5945 0 15.9546 0H17.5909C17.8168 0 18 0.186249 18 0.41598V1.2479C18 1.47763 17.8168 1.66388 17.5909 1.66388H16.5606L14.0045 10.2046L14.9592 11.337C15.3365 11.7846 15.5064 12.4013 15.3327 12.9637C15.1106 13.683 14.4863 14.1429 13.7664 14.1429H2.04544C1.81951 14.1429 1.63634 13.9566 1.63634 13.7269V12.895C1.63634 12.6652 1.81951 12.479 2.04544 12.479H13.7665L12.4697 10.9406C12.4371 10.9019 12.4131 10.8583 12.3884 10.8151H4.46083C3.82675 10.8151 3.24974 10.4428 2.97974 9.8594L0.125029 3.69125C0.0431461 3.51374 0 3.31673 0 3.12131V3.0035C0 2.26369 0.589897 1.66388 1.31755 1.66388Z" fill="black" />
-                  <path d="M13.1785 18.0001C12.2909 18.0001 11.5714 17.2805 11.5714 16.3929C11.5714 15.5053 12.2909 14.7858 13.1785 14.7858C14.0661 14.7858 14.7856 15.5053 14.7856 16.3929C14.7856 17.2805 14.0661 18.0001 13.1785 18.0001Z" fill="black" />
-                  <path d="M3.53568 18.0001C2.64808 18.0001 1.92854 17.2805 1.92854 16.3929C1.92854 15.5053 2.64808 14.7858 3.53568 14.7858C4.42328 14.7858 5.14282 15.5053 5.14282 16.3929C5.14282 17.2805 4.42328 18.0001 3.53568 18.0001Z" fill="black" />
-                </svg>
-              </div>
-              <div class="button header__burger">
-                <span></span>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div class="header__row">
-        <div class="header__content">
-          <h1 class="header__main-title main-title">
-            YOUR PERSONALIZED COFFEE
-          </h1>
-        </div>
-        <div class="header__bg">
-          <div class="header__play-button">
-            <img src="./images/icons/header-button-play.svg" alt="">
-          </div>
-        </div>
-        <nav class="header__sidebar sidebar">
-          <ul class="sidebar__list nav__list center-full flex-y">
-            <li class="sidebar__item nav__item"><a href="#" class="sidebar__link nav__link link">TRANG CHỦ</a></li>
-            <li class="sidebar__item nav__item"><a href="#" lang="en" class="sidebar__link nav__link link">COFFEE</a></li>
-            <li class="sidebar__item nav__item"><a href="#" class="sidebar__link nav__link link">PHIN MẠ MÀU</a></li>
-            <li class="sidebar__item nav__item"><a href="#combo" class="sidebar__link nav__link link">COMBO PHIN PHÊ</a></li>
-            <li class="sidebar__item nav__item"><a href="#giftset" lang="en" class="sidebar__link nav__link link">GIFTSET</a></li>
-            <li class="sidebar__item nav__item"><a href="#" class="sidebar__link nav__link link">LIÊN HỆ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <header class="header">
-      <div id="header-container" class="container header__container header-container">
-        <!-- ! сделать в реакте header --> 
-      </div>
-    </header>
+    <div id="header-root"></div>
     <main class="main">
       <section class="coffee">
         <div class="container coffee__container">
@@ -161,7 +112,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <span class="footer__copyright">
-          © Revo Coffee Việt Nam - 2018
+          © Revo Coffee Việt Nam - 2025
         </span>
       </div>
     </footer>
