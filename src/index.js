@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/base.css';
-import HeaderContainer from './HeaderContainer.js';
+import HeaderContainer from './components/HeaderContainer.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const headerContainer = ReactDOM.createRoot(document.getElementById('header-container'));
+const headerContainer = ReactDOM.createRoot(document.getElementById('header-root'));
 
 headerContainer.render(
   <React.StrictMode>

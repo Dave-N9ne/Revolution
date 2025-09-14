@@ -1,9 +1,11 @@
 import './App.css';
+import HeaderContainer from './components/HeaderContainer';
+import Header from './components/HeaderContainer';
 
 function App() {
-  return <div>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius explicabo labore sed corporis eligendi alias ea fugiat nostrum repudiandae fuga voluptas at ipsa saepe, quasi illum amet dolorum impedit cum?
-  </div>
+  return (
+    <div>sliders</div>
+  )
 }
 
 export default App;
