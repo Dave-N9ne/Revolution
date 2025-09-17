@@ -1,0 +1,75 @@
+.taste {
+  position: relative;
+}
+.taste__container {
+  padding-top: 90px;
+  padding-bottom: 128px;
+}
+.taste__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27.428571vw;
+  height: 100%;
+  background: var(--dark-blue-color);
+  z-index: -1;
+}
+.taste__title {
+  margin-bottom: 72px;
+}
+.taste__article {
+  box-shadow: 0 4px 24px 0 rgba(205, 205, 205, 0.5);
+}
+.taste__img {
+  max-width: 236px;
+  /* max-height: 256px; */
+}
+.taste__content {
+  padding: 42px;
+  background: #fff;
+}
+.taste__price {
+  margin-bottom: 8px;
+}
+.taste__sub-title {
+  margin-bottom: 24px;
+}
+.taste__desc {
+  margin-bottom: 18px;
+}
+.taste__buttons {
+  justify-content: space-between;
+  gap: 5px;
+}
+.taste__button {
+  padding: 7px 16px;
+  font-size: calc(0.75rem + 0.25 * ((100vw - 20rem) / (87.5 - 20)));
+}
+.taste__button:hover {
+  color: #fff;
+  background: var(--camel-color);
+  border-radius: 19px;
+}
+
+/* ! доработать слайдер и добавить адаптив */
+.swiper {
+  overflow: visible;
+}
+.swiper-wrapper {
+  max-height: 600px;
+}
+/* ! доработать слайдер и добавить адаптив */
+
+@media (max-width: 576px) {
+  .taste__article {
+    flex-flow: column;
+  }
+  .taste__img {
+    max-width: 100%;
+    max-height: 240px;
+  }
+  .taste__content {
+    padding: 15px;
+  }
+}
