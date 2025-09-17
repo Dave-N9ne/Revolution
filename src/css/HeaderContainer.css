@@ -92,6 +92,21 @@
 .header__play-button img {
   object-fit: contain;
 }
+.header__media {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 30;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.header__video {
+  width: 50vw;
+  height: calc(50vw * 0.5625);
+  position: relative;
+  object-fit: cover;
+}
+
 .sidebar {
   background: var(--dark-blue-color);
 }
@@ -137,4 +152,8 @@
 }
 .header__overlay.active {
   transform: translateX(0);
+}
+
+.header__media.active {
+  transform: scale(1);
 }
