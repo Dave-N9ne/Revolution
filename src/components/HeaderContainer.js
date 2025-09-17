@@ -5,6 +5,9 @@ import '../css/HeaderContainer-media.css';
 
 import background from '../img/header-bg.jpg';
 import playButton from '../img/header-button-play.svg';
+import VideoMP4 from '../video/header-video.mp4';
+import VideoWEBM from '../video/header-video.webm';
+import Poster from '../img/header-bg.jpg'
 
 const addAdditionalStyle = (
   condition, 
@@ -35,9 +38,9 @@ function HeaderContainer() {
   }, [])
 
   return (
+    // ! добавить и сверстать модальное окно с видео 
     // ! подумать еше над названиями в header
     // ! добавить альтушки
-    // ! добавить скрипты для бургера и сверстать модальное окно с видео 
     <header className={`header`}>
     <div className={`container header__container header-container`}>
       <div
@@ -101,10 +104,39 @@ function HeaderContainer() {
         </div>
       </div>
       <div className={`header__bg`}>
-        <img src={background} alt="background" />
-        <button className="header__play-button">
-          <img src={playButton} alt="play" />
+        <img
+          src={background} 
+          alt="background" 
+        />
+        <button  
+          className="header__play-button"
+          onClick={() => setIsClickedVideo(true)}
+        >
+          <img
+            src={playButton} 
+            alt="play" 
+          />
         </button>
+      </div>
+      <div
+        className={
+          addAdditionalStyle(
+            isClickedVideo,
+            'active',
+            'header__media center-full'
+          )
+        }
+        onClick={() => setIsClickedVideo(false)}
+      >
+        <video
+          className='header__video'
+          src={VideoWEBM}
+          poster={Poster} 
+          controls
+          onClick={(event) => event.stopPropagation()}
+        >
+          <source src={VideoMP4} type="video/mp4"/>
+        </video>
       </div>
       <nav className={
         addAdditionalStyle(
