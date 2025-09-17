@@ -36,6 +36,11 @@
     bottom: 0;
   }
 
+  .header__video {
+    width: 90vw;
+    height: calc(90vw * 0.5625);
+  }
+
   .sidebar {
       overflow-y: auto;
       position: fixed;
