@@ -13,6 +13,7 @@
 @import './vars.css';
 @import './utils.css';
 @import './coffee.css';
+@import './taste.css';
 @import './footer.css';
 
 html {
@@ -60,10 +61,27 @@ body {
     color: #232c38;
 }
 .slogan {
-    margin-bottom: 6px;
+    margin: 0 auto 6px;
+    display: inline-block;
+    width: 100%;
     font-size: calc(1.125rem + 0.125 * ((100vw - 20rem) / (87.5 - 20)));
     line-height: 1.2;
     font-weight: 600;
+}
+
+.price {
+    font-weight: 600;
+    font-size: calc(1.125rem + 0.125 * ((100vw - 20rem) / (87.5 - 20)));
+    line-height: 1.2;
+    color: var(--camel-color);
+}
+.button {
+    padding: 7px 16px;
+}
+.button:hover {
+    color: #f9fbff;
+    background: var(--camel-color);
+    border-radius: 19px;
 }
 
 /*  * ===== header ===== 
