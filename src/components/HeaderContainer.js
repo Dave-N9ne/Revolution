@@ -82,7 +82,7 @@ function HeaderContainer() {
               </svg>
             </div>
             <div 
-              className='scrolled button header__burger'
+              className='scrolled header__burger'
               onClick={() => setIsClickedMenu(true)}  
             >
               <span className="header-burger_line"></span>
