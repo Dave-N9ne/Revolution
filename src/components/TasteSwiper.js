@@ -1,8 +1,9 @@
-import { React } from 'react';
+import { React, useRef } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Grid } from 'swiper/modules';
+import { Grid, Navigation } from 'swiper/modules';
 import 'swiper/css/grid';
+import 'swiper/css/navigation';
 import 'swiper/css';
 import '../css/taste.css';
 
@@ -74,10 +75,10 @@ const slides = slidesData.map((slide) => {
           </p>
           <ul class="taste__buttons flex-x">
             <li class="taste__item">
-              <button class="taste__button button">MUA NGAY</button>
+              <button class="taste__button button">Mua Ngay</button>
             </li>
             <li class="taste__item">
-              <button class="taste__button button">CHI TIẾT</button>
+              <button class="taste__button button">Chi Tiet</button>
             </li>
           </ul>
         </div>
@@ -87,22 +88,47 @@ const slides = slidesData.map((slide) => {
 });
 
 const TasteSwiper = () => {
+  const swiperRef = useRef(null);
   return (
-    <Swiper
-      className='taste__swiper swiper'
-      modules={[Grid]}
-      spaceBetween={30} 
-      autoHeight={false}
-      slidesPerView={2} 
-      grid={{
-        rows: 2,
-        fill: "column"
-      }}
-      onSlideChange={() => console.log('slide change')} 
-      onSwiper={(swiper) => console.log(swiper)} 
-    > 
-     {slides}
-    </Swiper>
+    <>
+      <Swiper
+        className='taste__swiper swiper'
+        modules={[Navigation, Grid]}
+        spaceBetween={30} 
+        autoHeight={false}
+        // centeredSlides={true}
+        slidesPerView={window.innerWidth <= 992 ? 1 : 2} 
+        navigation={{
+          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next',
+        }}
+        grid={{
+          rows: window.innerWidth <= 992 ? 1 : 2,
+          fill: window.innerWidth <= 992 ? 'row' : 'column'
+        }}
+        onSlideChange={() => console.log('slide change')} 
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+      > 
+       {slides}
+        <div className='swiper-button-prev'>
+          <img
+            className='swiper-navigation-arrow'
+            src="../img/slider-arrow-left.svg" 
+            alt="arrow" 
+          />
+        </div>
+        <div className='swiper-button-next'>
+          <img
+            className='swiper-navigation-arrow'
+            src="../img/slider-arrow-right.svg" 
+            alt="arrow"
+          />
+        </div>
+      </Swiper>
+    </>
+    
   )
 }
 
