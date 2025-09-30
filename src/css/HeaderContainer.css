@@ -2,8 +2,9 @@
   margin-bottom: 87px;
   min-height: 100vh;
 }
-.header .container {
+.header__container {
   position: relative;
+
 }
 .header__overlay {
   position: fixed;
