@@ -14,6 +14,7 @@
 @import './utils.css';
 @import './coffee.css';
 @import './taste.css';
+@import './giftset.css';
 @import './footer.css';
 
 html {
@@ -22,6 +23,7 @@ html {
 body {
     font: 300 1rem / 1.3333 'Nunito';
     color: #151d28;
+    overflow-x: hidden;
 }
 
 .container {
