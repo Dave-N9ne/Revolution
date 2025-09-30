@@ -1,0 +1,68 @@
+.giftset {
+  background: var(--light-gray-color);
+}
+.giftset .container {
+  padding-top: 86px;
+}
+.giftset__title {
+  margin-bottom: 66px;
+}
+.giftset__body {
+  background: #fff;
+}
+.giftset__content {
+  padding: 64px 68px 64px 0;
+  display: none;
+  box-shadow: 1px 0 10px 0 rgba(205, 205, 205, 0.5);
+  &.active {
+    display: flex;
+  }
+}
+.giftset__img {
+  transform: translateX(-50%);
+}
+.giftset__article {
+  max-width: 430px;
+}
+.giftset__price,
+.giftset__sub-title {
+  margin-bottom: 12px;
+}
+.giftset__desc {
+  margin-bottom: 24px;
+}
+.giftset__facts {
+  margin-bottom: 46px;
+}
+.giftset {
+  .tabs__buttons {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1.875rem;
+    line-height: 1.13333;
+    color: #415167;
+    width: fit-content;
+    justify-items: start;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+  }
+  .tabs__button {
+    padding-left: 37px;
+    padding-right: 38px;
+    display: inline-block;
+    height: 100%;
+    /* background: var(--light-gray-color); */
+    &.active {
+      background: #fff;
+    }
+  }
+}
+.tabs__item {
+  background: var(--light-gray-color);
+  /* width: fit-content; */
+  height: 100%;
+}
+.tabs__button.active + .tabs__item {
+  background: #fff;
+}
