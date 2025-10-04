@@ -3,6 +3,7 @@
 }
 .giftset .container {
   padding-top: 86px;
+  padding-bottom: 125px;
 }
 .giftset__title {
   margin-bottom: 66px;
@@ -19,7 +20,14 @@
   }
 }
 .giftset__img {
-  transform: translateX(-50%);
+  max-width: 300px;
+}
+.giftset__img img {
+  transform: translateX(-52%);
+  max-width: 383px;
+  max-height: 352px;
+  width: initial;
+  height: initial;
 }
 .giftset__article {
   max-width: 430px;
@@ -33,6 +41,14 @@
 }
 .giftset__facts {
   margin-bottom: 46px;
+  gap: 14px;
+}
+.giftset__fact {
+  flex-grow: 1;
+  gap: 12px;
+}
+.giftset__info_bold {
+  font-weight: 600;
 }
 .giftset {
   .tabs__buttons {
@@ -52,15 +68,16 @@
     padding-right: 38px;
     display: inline-block;
     height: 100%;
-    /* background: var(--light-gray-color); */
     &.active {
       background: #fff;
     }
   }
 }
+.giftset__tabs {
+  justify-content: flex-end;
+}
 .tabs__item {
   background: var(--light-gray-color);
-  /* width: fit-content; */
   height: 100%;
 }
 .tabs__button.active + .tabs__item {
