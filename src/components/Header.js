@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 
-import '../css/header.css';
+import '../css/header.css'
+import '../css/css-media/headerMedia.css';
 
 import background from '../img/header-bg.webp';
 import playButton from '../img/header-button-play.svg';
