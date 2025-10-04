@@ -7,7 +7,7 @@ const addAdditionalStyle = (
   ...initialStyles
 ) => 
   `${initialStyles.map(style => `${style} `)}
-   ${condition ? `${addedStyle}` : ``}`
+   ${condition ? `${addedStyle}` : ``}`;
 
 const addTabsContent = (activeTab) => {
   return GiftsetTabsData.map((item, index) => {
@@ -45,7 +45,7 @@ const addTabsContent = (activeTab) => {
               </div>
               <div class="giftset__info">
                 Loại hạt <br />
-                Fine Robusta Blend
+                <span className="giftset__info_bold">Fine Robusta Blend</span>
               </div>
             </li>
             <li class="giftset__fact flex-x">
@@ -57,10 +57,13 @@ const addTabsContent = (activeTab) => {
                   <path d="M29.8866 24.4724L24.6612 15.2075L21.8278 18.383C21.6605 18.5847 21.4133 18.7016 21.1524 18.7016C20.8915 18.7016 20.6443 18.5847 20.4769 18.383L17.6436 15.2075L12.4767 24.4725C12.3231 24.7469 12.3257 25.0828 12.4836 25.3547C12.6415 25.6265 12.9298 25.7935 13.2422 25.7935H29.121C29.4334 25.7935 29.7218 25.6265 29.8797 25.3546C30.0376 25.0827 30.0402 24.7469 29.8866 24.4724Z" fill="#415167" />
                 </svg>
               </div>
-              <div class="giftset__info">Loại hạt</div>
+              <div class="giftset__info">
+                Độ cao <br />
+                <span className="giftset__info_bold">700 - 800m</span>
+              </div>
             </li>
           </ul>
-          <ul class="giftset__buttons">
+          <ul class="giftset__buttons flex-x">
             <li class="giftset__item">
               <a href="#" class="giftset__button button">
                 MUA NGAY
@@ -106,7 +109,7 @@ const GiftsetTabs = ({activeTab, clickHandler}) => {
       <div class="giftset__body tabs__body">
         {addTabsContent(activeTab)}
       </div>
-      <ul className="tabs__buttons grid">
+      <ul className="tabs__buttons buttons grid">
         {addTabsButtons(activeTab, clickHandler)}
       </ul>
     </div>

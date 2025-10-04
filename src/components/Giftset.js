@@ -1,6 +1,9 @@
 import {React, useState} from 'react';
 import GiftsetTabs from './Giftset-Tabs';
 
+import '../css/giftset.css';
+import '../css/css-media/giftsetMedia.css';
+
 const Giftset = () => {
   const [activeTab, setActiveTab] = useState(0);
 

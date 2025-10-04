@@ -23,4 +23,4 @@ export const GiftsetTabsData = [
     subTitle: 'Giftset "Lorem ipsum dolor sit amet?"',
     desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem possimus, aliquam nihil ratione non vel magni? Velit magni sed qui iusto, blanditiis dicta quis ea reiciendis adipisci eius, cupiditate expedita.'
   }
-]
+];
