@@ -1,7 +1,3 @@
-import './App.css';
-
-import HeaderContainer from './components/Header.js';
-
 import Header from './components/Header.js';
 import Coffee from './components/Coffee.js'
 import Taste from './components/Taste.js';
