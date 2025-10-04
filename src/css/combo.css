@@ -1,0 +1,53 @@
+.combo {
+  position: relative;
+  z-index: 1;
+  .container {
+    padding-top: 88px;
+    padding-bottom: 128px;
+    max-width: 1200px;
+  }
+}
+.combo__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27.428571vw;
+  height: 100%;
+  background: var(--dark-blue-color);
+  z-index: -1;
+}
+.combo__slogan {
+  margin-bottom: 6px;
+}
+.combo__title {
+  margin-bottom: 64px;
+}
+.combo__card {
+  max-width: 360px;
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgba(205, 205, 205, 0.5);
+}
+.combo__info {
+  padding: calc(24px + 18 * ((100vw - 320px) / (1400 - 320)));
+}
+.combo__prices {
+  gap: 15px;
+}
+.price_striped {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.combo__prices,
+.combo__sub-title {
+  margin-bottom: 10px;
+}
+.combo__desc {
+  margin-bottom: 32px;
+}
+.combo__buttons {
+  justify-content: space-between;
+  gap: 5px;
+}

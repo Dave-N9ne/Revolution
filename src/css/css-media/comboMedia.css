@@ -1,0 +1,19 @@
+@media (max-width: 992px) {
+  .combo {
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .combo__container::before {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .combo {
+    .container {
+        padding-top: 45px;
+        padding-bottom: 64px;
+    }
+}
+}
