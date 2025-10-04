@@ -1,7 +1,9 @@
 import {React} from 'react'
 import TasteSwiper from './TasteSwiper.js';
-import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
+
+import '../css/taste.css';
+import '../css/css-media/tasteMedia.css';
 
 const Taste = () => {
   return (
