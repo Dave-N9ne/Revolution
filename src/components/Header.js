@@ -6,8 +6,8 @@ import '../css/css-media/headerMedia.css';
 import Logo from '../img/revo-icon.svg';
 import background from '../img/header-bg.webp';
 import playButton from '../img/header-button-play.svg';
-import VideoMP4 from '../video/header-video.mp4';
-import VideoWEBM from '../video/header-video.webm';
+import videoMP4 from '../video/header-video.mp4';
+import videoWEBM from '../video/header-video.webm';
 import Poster from '../img/header-bg.webp';
 
 const addAdditionalStyle = (
@@ -128,12 +128,12 @@ const HeaderContainer = () => {
       >
         <video
           className='header__video'
-          src={VideoWEBM}
+          src={videoWEBM}
           poster={Poster} 
           controls
           onClick={(event) => event.stopPropagation()}
         >
-          <source src={VideoMP4} type="video/mp4"/>
+          <source src={videoMP4} type="video/mp4"/>
         </video>
       </div>
       <nav className={
