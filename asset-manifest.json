@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Revolution/static/css/main.61c7f450.css",
+    "main.js": "/Revolution/static/js/main.a716d718.js",
+    "static/js/453.ed3810f9.chunk.js": "/Revolution/static/js/453.ed3810f9.chunk.js",
+    "static/media/header-video.webm": "/Revolution/static/media/header-video.0d28fc95e271e7b38af8.webm",
+    "static/media/header-video.mp4": "/Revolution/static/media/header-video.a6e54afd7fec924f83b2.mp4",
+    "static/media/Montserrat-VariableFont_wght.woff2": "/Revolution/static/media/Montserrat-VariableFont_wght.29d23d38bf1ff3e03263.woff2",
+    "static/media/Nunito-VariableFont_wght.woff2": "/Revolution/static/media/Nunito-VariableFont_wght.bcfaf5e91f47a2ab2f96.woff2",
+    "static/media/header-bg.webp": "/Revolution/static/media/header-bg.0f9e7b2e8d27af94bde7.webp",
+    "static/media/giftset-gift.webp": "/Revolution/static/media/giftset-gift.b5a8c7146e5939d44621.webp",
+    "static/media/giftset-gift-inverted.webp": "/Revolution/static/media/giftset-gift-inverted.5f49e53ba3829bd8b356.webp",
+    "static/media/giftset-gift-black-&-white.webp": "/Revolution/static/media/giftset-gift-black-&-white.e4fb51c950af6fc04ed0.webp",
+    "static/media/revo-icon.svg": "/Revolution/static/media/revo-icon.c039f5389c168aec34cde5d0a13d52f9.svg",
+    "static/media/coffee-icon-2.svg": "/Revolution/static/media/coffee-icon-2.8b4c8c1998c0b352e49f8cc88a412d20.svg",
+    "static/media/coffee-icon-4.svg": "/Revolution/static/media/coffee-icon-4.6dcc721b6a9c0416ccefc157e73ddb89.svg",
+    "static/media/slider2-3-honey.webp": "/Revolution/static/media/slider2-3-honey.b806e69746b4d64cfaeb.webp",
+    "static/media/slider2-1-bold.webp": "/Revolution/static/media/slider2-1-bold.ab01aabcc24aa66021b3.webp",
+    "static/media/slider2-2-everyday.webp": "/Revolution/static/media/slider2-2-everyday.651c43fe661431fd6bc7.webp",
+    "static/media/slider2-4-natural.webp": "/Revolution/static/media/slider2-4-natural.527b4cdb90649374325a.webp",
+    "static/media/coffee-icon-3.svg": "/Revolution/static/media/coffee-icon-3.fdf5585e2575abd0a2bb12d566c728d1.svg",
+    "static/media/coffee-icon-1.svg": "/Revolution/static/media/coffee-icon-1.bdd40f73b1c3c689ce22d8d30041c01b.svg",
+    "static/media/slider1-5-honey.webp": "/Revolution/static/media/slider1-5-honey.c710eae581ec784625dd.webp",
+    "static/media/slider1-2-origin.webp": "/Revolution/static/media/slider1-2-origin.97d136d763669bfa1a0c.webp",
+    "static/media/slider1-6-natural.webp": "/Revolution/static/media/slider1-6-natural.55d811c68e4024f89ca2.webp",
+    "static/media/slider1-3-everyday.webp": "/Revolution/static/media/slider1-3-everyday.18c79c5003cb28a77d12.webp",
+    "static/media/slider1-4-bold.webp": "/Revolution/static/media/slider1-4-bold.6c2b279d030906c28ab9.webp",
+    "static/media/slider1-1-morning.webp": "/Revolution/static/media/slider1-1-morning.85c0f90099f32d7b71f5.webp",
+    "index.html": "/Revolution/index.html",
+    "static/media/slider-arrow-left.svg": "/Revolution/static/media/slider-arrow-left.757e07f4c0306abd873d2a13c5540b0f.svg",
+    "static/media/slider-arrow-right.svg": "/Revolution/static/media/slider-arrow-right.3465251b0c9c27418d81786ebdca9ee4.svg",
+    "static/media/header-button-play.svg": "/Revolution/static/media/header-button-play.5dee072dcd5e61d2e601490a69977d61.svg",
+    "main.61c7f450.css.map": "/Revolution/static/css/main.61c7f450.css.map",
+    "main.a716d718.js.map": "/Revolution/static/js/main.a716d718.js.map",
+    "453.ed3810f9.chunk.js.map": "/Revolution/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61c7f450.css",
+    "static/js/main.a716d718.js"
+  ]
+}
