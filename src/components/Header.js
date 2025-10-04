@@ -1,13 +1,12 @@
 import {useState, useEffect} from 'react';
 
-import '../css/HeaderContainer.css';
-import '../css/HeaderContainer-media.css';
+import '../css/header.css';
 
-import background from '../img/header-bg.jpg';
+import background from '../img/header-bg.webp';
 import playButton from '../img/header-button-play.svg';
 import VideoMP4 from '../video/header-video.mp4';
 import VideoWEBM from '../video/header-video.webm';
-import Poster from '../img/header-bg.jpg'
+import Poster from '../img/header-bg.webp'
 
 const addAdditionalStyle = (
   condition, 
@@ -17,7 +16,7 @@ const addAdditionalStyle = (
   `${initialStyles.map(style => `${style} `)}
    ${condition ? `${addedStyle}` : ``}`
 
-function HeaderContainer() {
+const HeaderContainer = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isClickedMenu, setIsClickedMenu] = useState(false);
   const [isClickedVideo, setIsClickedVideo] = useState(false);
@@ -149,12 +148,36 @@ function HeaderContainer() {
           className="sidebar__list nav__list flex-y center-x"
           onClick={(event) => event.stopPropagation()}
         >
-          <li className="sidebar__item nav__item"><a href="#" className="sidebar__link nav__link link">TRANG CHỦ</a></li>
-          <li className="sidebar__item nav__item"><a href="#" lang="en" className="sidebar__link nav__link link">COFFEE</a></li>
-          <li className="sidebar__item nav__item"><a href="#" className="sidebar__link nav__link link">PHIN MẠ MÀU</a></li>
-          <li className="sidebar__item nav__item"><a href="#combo" className="sidebar__link nav__link link">COMBO PHIN PHÊ</a></li>
-          <li className="sidebar__item nav__item"><a href="#giftset" lang="en" className="sidebar__link nav__link link">GIFTSET</a></li>
-          <li className="sidebar__item nav__item"><a href="#" className="sidebar__link nav__link link">LIÊN HỆ</a></li>
+          <li className="sidebar__item nav__item">
+            <a href="#" className="sidebar__link nav__link link">
+              TRANG CHỦ
+            </a>
+          </li>
+          <li className="sidebar__item nav__item">
+            <a href="#" lang="en" className="sidebar__link nav__link link">
+              COFFEE
+            </a>
+          </li>
+          <li className="sidebar__item nav__item">
+            <a href="#" className="sidebar__link nav__link link">
+              PHIN MẠ MÀU
+            </a>
+          </li>
+          <li className="sidebar__item nav__item">
+            <a href="#combo" className="sidebar__link nav__link link">
+              COMBO PHIN PHÊ
+            </a>
+          </li>
+          <li className="sidebar__item nav__item">
+            <a href="#giftset" lang="en" className="sidebar__link nav__link link">
+              GIFTSET
+            </a>
+          </li>
+          <li className="sidebar__item nav__item">
+            <a href="#" className="sidebar__link nav__link link">
+              LIÊN HỆ
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
