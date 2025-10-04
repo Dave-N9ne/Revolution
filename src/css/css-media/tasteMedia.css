@@ -1,0 +1,50 @@
+@media (max-width: 1200px) {
+  .taste__button {
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 992px) {
+  .taste {
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .taste__container::before {
+    width: 100%;
+  }
+  .taste__slogan,
+  .taste__title {
+    color: #fff;
+  }
+  .swiper {
+    overflow: hidden;
+  }
+  .swiper-wrapper {
+    max-height: initial;
+  }
+  .taste__slide {
+    flex-flow: column;
+    max-width: 500px;
+  }
+  .taste__img {
+    max-width: 100%;
+    max-height: 240px;
+  }
+  .taste__content {
+    padding: 15px;
+  }
+  .taste__buttons {
+    justify-content: flex-start;
+  }
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .taste__container {
+    padding: 40px 40px 60px;
+  }
+}
