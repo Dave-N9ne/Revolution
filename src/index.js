@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/base.css';
-import HeaderContainer from './components/HeaderContainer.js';
+import HeaderContainer from './components/Header.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const headerContainer = ReactDOM.createRoot(document.getElementById('header-root'));
+// const headerContainer = ReactDOM.createRoot(document.getElementById('header-root'));
 
-headerContainer.render(
-  <React.StrictMode>
-    <HeaderContainer />
-  </React.StrictMode>
-)
+// headerContainer.render(
+//   <React.StrictMode>
+//     <HeaderContainer />
+//   </React.StrictMode>
+// )
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
