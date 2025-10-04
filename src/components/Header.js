@@ -3,11 +3,12 @@ import {useState, useEffect} from 'react';
 import '../css/header.css'
 import '../css/css-media/headerMedia.css';
 
+import Logo from '../img/revo-icon.svg';
 import background from '../img/header-bg.webp';
 import playButton from '../img/header-button-play.svg';
 import VideoMP4 from '../video/header-video.mp4';
 import VideoWEBM from '../video/header-video.webm';
-import Poster from '../img/header-bg.webp'
+import Poster from '../img/header-bg.webp';
 
 const addAdditionalStyle = (
   condition, 
@@ -38,9 +39,6 @@ const HeaderContainer = () => {
   }, [])
 
   return (
-    // ! добавить и сверстать модальное окно с видео 
-    // ! подумать еше над названиями в header
-    // ! добавить альтушки
     <header className={`header`}>
     <div className={`container header__container header-container`}>
       <div
@@ -63,7 +61,7 @@ const HeaderContainer = () => {
           className={`header__nav center-y`}>
           <div className={`header__logo`}>
             <img
-              src="./images/icons/revo-icon.svg" 
+              src={Logo} 
               alt="revo's icon" 
             />
           </div>
